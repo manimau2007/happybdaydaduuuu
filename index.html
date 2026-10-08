@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Daduu Bday ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <div class="bg" id="bg"></div>
+
+    <!-- ================= OPENING ================= -->
+
+    <section class="screen active opening" data-name="opening">
+
+        <div class="panel">
+
+            <div class="envelope-wrap" id="envelope">
+
+                <div class="env-back"></div>
+
+                <div class="env-paper">
+                    A little surprise
+                    <br>
+                    for Daduuuu ❤️
+                </div>
+
+                <div class="env-flap"></div>
+
+                <div class="env-front"></div>
+
+            </div>
+
+            <div class="title opening-title">
+                A little surprise
+                <br>
+                <span class="script">just for you</span>
+            </div>
+
+            <p class="sub">
+                Open it to begin.
+            </p>
+
+            <button class="btn" id="openGift">
+                OPEN
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= BIRTHDAY ================= -->
+
+    <section class="screen" data-name="birthday">
+
+        <div class="panel">
+
+            <button class="back-btn">
+                ← Back
+            </button>
+
+            <img
+                class="photo"
+                src="images/dadu-main.jpg"
+                alt="Daduuuu"
+            >
+
+            <div class="title">
+                Happy Birthday
+            </div>
+
+            <div class="script">
+                Daduuuu
+            </div>
+
+            <p class="sub">
+                May your beautiful aura radiate endlessly ✨
+            </p>
+
+            <button class="btn" id="toBalloons">
+                Blow Balloons
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= BALLOONS ================= -->
+
+    <section class="screen" data-name="balloons">
+
+        <div class="panel">
+
+            <button class="back-btn">
+                ← Back
+            </button>
+
+            <div class="title section-title">
+                Balloon
+            </div>
+
+            <div class="script">
+                Pop Game
+            </div>
+
+            <p class="small">
+                Tap every floating balloon ✨
+            </p>
+
+            <div
+                class="balloon-area"
+                id="balloonArea">
+            </div>
+
+            <div
+                class="tap"
+                id="balloonHint">
+                Pop all the balloons ✨
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CAKE ================= -->
+
+    <section class="screen" data-name="cake">
+
+        <div class="panel">
+
+            <button class="back-btn">
+                ← Back
+            </button>
+
+            <div class="title section-title">
+                Blow & Cut
+            </div>
+
+            <div class="script">
+                Cake
+            </div>
+
+            <p class="small" id="cakeHint">
+                Phase 1: Blow the candle flame out!
+            </p>
+
+            <div class="cake" id="cake">
+
+                <div class="flame"></div>
+
+                <div class="candle"></div>
+
+                <div class="cream"></div>
+
+                <div class="base"></div>
+
+            </div>
+
+            <button class="btn" id="cakeBtn">
+                BLOW CANDLE
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CHOICE ================= -->
+
+    <section class="screen" data-name="choice">
+
+        <div class="panel">
+
+            <button class="back-btn">
+                ← Back
+            </button>
+
+            <div class="title section-title">
+                The Ultimate
+            </div>
+
+            <div class="script">
+                Choice
+            </div>
+
+            <p class="small">
+                Are you ready to make a secret lifetime memory with me today?
+            </p>
+
+            <div class="choice-row">
+
+                <button
+                    class="btn secondary"
+                    id="noBtn">
+                    NO
+                </button>
+
+                <button
+                    class="btn"
+                    id="yesBtn">
+                    YES!
+                </button>
+
+            </div>
+
+            <p
+                class="small choice-msg"
+                id="choiceMsg">
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= MYSTERY GIFTS ================= -->
+
+    <section class="screen" data-name="gifts">
+
+        <div class="panel">
+
+            <button class="back-btn">
+                ← Back
+            </button>
+
+            <div class="title gift-title">
+                Select Your
+            </div>
+
+            <div class="script">
+                Mystery Gift
+            </div>
+
+            <p class="small">
+                Pick one and discover your little surprise ✨
+            </p>
+
+
+            <div class="gifts">
+
+
+                <!-- WARM HUGS -->
+
+                <button
+                    class="gift"
+                    data-message="For every time you needed a hug but I wasn't there... consider this a virtual one. 🫂❤️">
+
+                    <span>
+                        ♥ warm
+                        <br>
+                        hugs.
+                    </span>
+
+                </button>
+
+
+                <!-- SECRET WISH -->
+
+                <button
+                    class="gift"
+                    data-message="My little wish for you: may you always have reasons to smile, dream bigger and stay exactly the way you are. ✨🥹">
+
+                    <span>
+                        ♥ secret
+                        <br>
+                        wish.
+                    </span>
+
+                </button>
+
+
+                <!-- INFINITE LOVE -->
+
+                <button
+                    class="gift"
+                    data-message="No matter how far we are or how much life changes, you'll always have a special place in my heart. ♾️❤️">
+
+                    <span>
+                        ♥ infinite
+                        <br>
+                        love.
+                    </span>
+
+                </button>
+
+
+            </div>
+
+
+            <!-- MESSAGE APPEARS HERE -->
+
+            <div
+                class="gift-message"
+                id="giftMessage">
+            </div>
+
+
+            <button
+                class="btn hidden"
+                id="giftContinue">
+
+                CONTINUE ✨
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SCRATCH ================= -->
+
+    <section class="screen" data-name="scratch">
+
+        <div class="panel">
+
+            <button class="back-btn">
+                ← Back
+            </button>
+
+            <div class="title gift-title">
+                Scratch Your
+            </div>
+
+            <div class="script">
+                Wish
+            </div>
+
+            <p class="small">
+                Scratch the gold surface to reveal your wish.
+            </p>
+
+
+            <div class="scratchbox">
+
+                <div class="scratch-content">
+
+                    <div class="wish">
+
+                        Happy Birthday!
+
+                        <br>
+
+                        <small>
+                            You are the star that lights up my skies.
+                            May your life be filled with endless joy,
+                            magic, and sweet memories. ❤️
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <canvas
+                    class="scratch"
+                    id="scratch">
+                </canvas>
+
+            </div>
+
+
+            <button
+                class="btn hidden"
+                id="afterScratch">
+
+                CONTINUE
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= VAULT ================= -->
+
+    <section class="screen" data-name="vault">
+
+        <div class="panel vault">
+
+            <button class="back-btn">
+                ← Back
+            </button>
+
+            <div class="title vault-title">
+                Vault of
+            </div>
+
+            <div class="script">
+                Secrets
+            </div>
+
+            <p class="small">
+                Enter the special pass-key
+                <br>
+                (Hint: A name that’s only yours)
+            </p>
+
+
+            <input
+                id="pass"
+                type="password"
+                placeholder="Enter key..."
+                autocomplete="off"
+            >
+
+
+            <button
+                class="btn"
+                id="unlock">
+
+                UNLOCK CORE
+
+            </button>
+
+
+            <p
+                class="tap"
+                id="vaultHint">
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SECRET VAULT ================= -->
+
+    <section class="screen" data-name="secret">
+
+        <div class="panel">
+
+            <button class="back-btn">
+                ← Back
+            </button>
+
+
+            <img
+                class="photo-mini"
+                src="images/dadu-main.jpg"
+                alt=""
+            >
+
+
+            <div class="title vault-title">
+                Vault of
+            </div>
+
+            <div class="script">
+                Secrets
+            </div>
+
+
+            <p class="secret">
+
+                To the world, you may just be one single person.
+                But to me, you are my universe, the entire cosmic fabric,
+                like the gravity holding everything together and the soft
+                ambient light that makes reality infinitely warm.
+
+                <br><br>
+
+                Happy Birthday, my absolute favorite adventure. ❤️
+
+            </p>
+
+        </div>
+
+    </section>
+
+</div>
+
+
+<!-- ================= MUSIC ================= -->
+
+<audio
+    id="song"
+    src="music/tu-chahiye.mp3"
+    preload="auto">
+</audio>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
